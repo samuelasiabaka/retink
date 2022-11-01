@@ -1,0 +1,124 @@
+.hero {
+  background: rgba(126, 28, 254, 0.05);
+  h1 {
+    font-family: 'Poppins', sans-serif;
+    font-weight: 900;
+    font-size: 3em;
+    line-height: 150%;
+    span {
+      color: var(--primary-color);
+    }
+  }
+
+  p {
+    font-family: 'Poppins', sans-serif;
+    font-weight: 400;
+    font-size: 1.2em;
+    line-height: 34px;
+    span {
+      color: var(--primary-color);
+    }
+  }
+
+  // form style
+  .form-div {
+    form {
+      text-align: left;
+
+      h4 {
+        color: var(--primary-color);
+        text-align: left;
+        font-family: 'Poppins';
+        font-style: normal;
+        font-weight: 600;
+        font-size: 24px;
+        line-height: 170%;
+      }
+      .wrapper {
+        display: inline;
+        margin-left: -15px;
+        span {
+          font-family: 'Poppins';
+          font-style: normal;
+          font-weight: 500;
+          font-size: 15px;
+          line-height: 170%;
+          color: #323232;
+        }
+        // border-radius: 2px;
+        // box-sizing: border-box;
+        // padding-bottom: 2em 0;
+
+        input {
+          background-color: transparent;
+          border: none;
+          border-bottom: 1px solid #ccc;
+          box-sizing: border-box;
+          font-family: 'Poppins';
+          font-size: 15px;
+          text-align: center;
+          width: 130px;
+          // margin-left: -10px;
+
+          &:focus {
+            outline: none;
+          }
+        }
+
+        input::-webkit-input-placeholder {
+          color: #aaa;
+          font-style: italic;
+        }
+
+        input:focus::-webkit-input-placeholder {
+          color: blueviolet;
+        }
+      }
+
+      .btn1 {
+        padding: 4px 6px;
+        border-radius: 10px;
+        border: 1px solid #7e1cfe;
+        background-color: #7e1cfe;
+        color: white;
+        &:hover {
+          background-color: blueviolet;
+        }
+      }
+      .btn2 {
+        margin-left: 1em;
+        background-color: transparent;
+        color: #7e1cfe;
+        text-decoration: underline;
+        border: 1px solid #7e1cfe;
+        padding: 4px 6px;
+        border-radius: 10px;
+        &:hover {
+          background-color: blueviolet;
+          color: white;
+        }
+      }
+    }
+  }
+
+  // Avatar div
+  .avatar-div {
+    padding: 0;
+    img {
+      width: 450px;
+      height: 500px;
+      transition: transform 0.5s;
+      &:hover {
+        -ms-transform: scale(1.1);
+        -webkit-transform: scale(1.1);
+        transform: scale(1.1);
+      }
+    }
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  .avatar-div {
+    display: none;
+  }
+}

@@ -1,0 +1,16 @@
+li {
+  color: #7e1cfe !important;
+}
+
+nav {
+  .container-fluid {
+    padding: 10px 50px;
+  }
+}
+
+.navbar-light .navbar-nav .nav-item .nav-link {
+  color: #7e1cfe !important;
+  &:hover {
+    color: grey !important;
+  }
+}
